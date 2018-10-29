@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+
 }
 .navbar-buttons{
     background-color: transparent;
@@ -155,7 +157,7 @@
     right: 0;
   }
   .play-button {
-  
+    
     width: 100px;
     height: 100px;
     background: white;
@@ -164,6 +166,7 @@
     margin: 20px;
     border-radius:150px;
     box-shadow: 0 0 10px 1px black;
+    
   }
   .play-button:after {
     content: '';
@@ -177,5 +180,20 @@
     z-index: -1;
     border-radius: 150px;
   }
-  
-    
+
+.play-button:hover{
+    cursor:pointer;
+}
+.fas.fa-play{
+    color: rgba(0,0,0,0.75);
+    margin-left: 44px;
+    margin-top: 44px;
+}
+#iframe-video{
+    width: 750px;
+    height: 300px;
+}
+#modal-content{
+    background-color:transparent;
+}
+#close{color:white;}

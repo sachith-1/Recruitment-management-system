@@ -13,7 +13,7 @@
     <header id="header">
         <div class="container-fluid" id="mask-content">
             <!-- email line-->
-            <div class="container">
+            <div class="container" style="font-size:13px;">
                 <div class="row font-weight-light">
                     <p class="float-left">7508882095 | biswassrijeet@gmail.com</p>            
                     <div class="float-right ml-auto">
@@ -97,11 +97,32 @@
                         </div>
                     </div>
                     <div class="col-md-6" style="z-index:10">
-                        <div class="play-button mr-auto ml-auto"></div>
+                        <div class="play-button mr-auto ml-auto" data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-play"></i></span></div>
+                        
                     </div>
                 </div>
             </div>
             <!-- / 2 cards / --> 
+            <!-- video modal -->
+            <div class="modal fade" id="exampleModalCenter"  role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content" id="modal-content">
+                        <div class="modal-body">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" id="close">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container p-0">
+                                <div class="row ml-auto mr-auto">
+                                    <iframe id="iframe-video" width="auto" height="auto" src="https://www.youtube.com/embed/di6iwHhrH6s?autoplay=1&loop=1" frameborder="0" allow="autoplay; encrypted-media"  allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+              <!-- /video modal/ -->
             <!-- 4 cards -->
             <div class="container feature-cards">
                 <div class="row">
@@ -277,6 +298,7 @@
     <!-- footer include all types of js after it-->
     <footer></footer>
     <!-- js cdns-->
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
