@@ -166,8 +166,9 @@
     margin: 20px;
     border-radius:150px;
     box-shadow: 0 0 10px 1px black;
-    
+    animation: pulse 1.5s cubic-bezier(0.66, 0.67, 0.83, 0.99) infinite;
   }
+  
   .play-button:after {
     content: '';
     position: absolute;
@@ -179,7 +180,15 @@
     opacity:0.8;
     z-index: -1;
     border-radius: 150px;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);    
   }
+  @-webkit-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(231, 213, 212, 0.925);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 45px rgba(235, 217, 216, 0.938);}}
+@keyframes pulse {to {box-shadow: 0 0 0 45px rgba(211, 192, 190, 0);}}
 
 .play-button:hover{
     cursor:pointer;
@@ -197,3 +206,20 @@
     background-color:transparent;
 }
 #close{color:white;}
+.sidenav {
+    width: 30px;
+    position: fixed;
+    z-index: 1;
+    right:0;
+    background: #eee;
+    overflow-x: hidden;
+    padding-left: 8px 0;
+    top:50%;
+    border-bottom-left-radius: 17px;
+    border-top-left-radius: 17px;
+}
+.sidebar-buttons{
+    font-size:24px;
+}
+
+
