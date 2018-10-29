@@ -207,22 +207,31 @@
 }
 #close{color:white;}
 .sidenav {
-    width: 30px;
+    width: 35px;
     position: fixed;
     z-index: 1;
-    right:0;
+    right: 0;
     background: #eee;
     overflow-x: hidden;
-    padding-left: 8px 0;
-    top:50%;
+    padding: 10px 0px 10px 8px;
+    top: 45%;
     border-bottom-left-radius: 17px;
     border-top-left-radius: 17px;
+    box-shadow: 0 0 7px 0px black;
 }
 .sidebar-buttons{
     font-size:24px;
+    padding-bottom: 5px;
+    transition: transform .2s;
+}
+.sidebar-buttons:hover{
+    ms-transform: scale(1.3); 
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3); 
 }
 
 
+<<<<<<< HEAD
 /* ==========================================================================
    Featured Jobs Section Style
    ========================================================================== */
@@ -517,3 +526,6 @@ footer ul li a {
 footer {
   padding: 0px;
 }
+=======
+
+>>>>>>> upstream/master
