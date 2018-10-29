@@ -8,12 +8,14 @@
     cursor:pointer;
     overflow: hidden;
     outline:none;
+    color:white;
 }
 .logo{
     background: url('../images/apple.svg') no-repeat center center;
     width:auto;
     min-width:36px;
     min-height:36px;
+    background-color:white;
 }
 .btn-secondarysecondary{
     background-color: transparent;
@@ -22,6 +24,7 @@
     cursor:pointer;
     overflow: hidden;
     outline:none;
+    color:white;
 }
 .header-content{
     padding-top:200px;
@@ -38,7 +41,7 @@
 .main-first-content-label{
     margin-top:50px;
 }
-header{
+#header{
     background: url('../images/office-1.jpg') no-repeat center;
     background-size:cover;
 }
@@ -46,3 +49,133 @@ header{
     background: url('../images/office-1.jpg') no-repeat center;
     padding:100px;
 }
+#mask-content{
+    background-color:rgba(0,0,0,0.75);
+    color:white;
+}
+.text-disabled{
+    color:#979a9e;   
+}
+#main-container-2-content{
+    padding:90px;
+    background-color: #F7F9FB;
+}
+#jobs-posted-hr{
+    background-color: #0f60db;
+    width:10%;
+    height:2px;
+    text-align:center;
+}
+
+ .fas.custom-fa{
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+ }
+ .fas.custom-fa-1{
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: grey;
+ }
+ #login_btn{
+    background: url(../images/enter.svg) no-repeat;
+    background-position: center left 55px;
+    width: 80px;
+    padding: 0;
+ }
+ #logout_btn{
+    background: url(../images/exit.svg) no-repeat;
+    background-position: center left 75px;
+    width: 100px;
+    padding: 0;
+ }
+ /* .custom-header-button{
+    background-color: blue;
+    background-repeat: no-repeat;
+    border:none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color:white;
+    border-radius:10px;
+ } */
+ .btn3d {
+    transition:all .08s linear;
+    position:relative;
+    outline:medium none;
+    -moz-outline-style:none;
+    border:0px;
+    margin-right:10px;
+    /* margin-top:15px; */
+}
+.btn3d:focus {
+    outline:medium none;
+    -moz-outline-style:none;
+}
+.btn3d:active {
+    top:9px;
+}
+.custom-header-button {
+    box-shadow:0 0 0 1px #428bca inset, 0 0 0 2px rgba(255,255,255,0.15) inset, 0 5px 0 0 #357ebd, 0 8px 0 1px rgba(0,0,0,0.4), 0 8px 8px 1px rgba(0,0,0,0.5);
+    background-color:#428bca;
+    color:white;
+    border-radius:10px;   
+}
+.custom-header-button-2{
+    background-color:#428bca;
+    color:white;
+    outline:medium none;
+    border:0px;
+    padding:10px 50px 10px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 19px 2px black;
+    cursor:pointer;
+    position:relative;
+}
+.custom-header-button-2:focus{
+    outline: none;
+    -moz-outline-style:none;
+}
+
+.custom-header-button-2:active{
+    top:3px;
+}
+.custom-header-button-2 span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    font-size:32px;
+    top: -5px;
+    right: 25px;
+    transition: 0.5s;
+  }
+  
+  .custom-header-button-2:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .play-button {
+  
+    width: 100px;
+    height: 100px;
+    background: white;
+    position: relative;
+    border: 0px;  
+    margin: 20px;
+    border-radius:150px;
+    box-shadow: 0 0 10px 1px black;
+  }
+  .play-button:after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: white;
+    opacity:0.8;
+    z-index: -1;
+    border-radius: 150px;
+  }
+  
+    
