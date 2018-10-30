@@ -240,6 +240,24 @@
 #top-companies{
     padding:100px;
 }
+#join-us-container{
+  background-color: #e8e0e03b;
+  padding: 50px;
+  z-index: 5;
+}
+#together-button{
+  background-color: blue;
+    outline: none 0;
+    margin: 0;
+    border: 0;
+    padding: 10px 50px 10px 50px;
+    color: white;
+    box-shadow: 0 0 6px black;
+}
+#together-button:hover{
+  box-shadow: 1px 2px 7px black;
+  cursor: pointer;
+}
 =======
 
 

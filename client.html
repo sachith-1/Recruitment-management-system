@@ -380,20 +380,27 @@
               </div>
         </div>
         <!-- /top companies contributed/ -->
-        <!-- jobs posted -->
-        <div class="container">
-            <div class="row"><h3 class="h3-responsive ml-auto mr-auto text-justify-center text-center font-weight-bold">Featured Jobs</h3></div>
-            <hr id="jobs-posted-hr">
-            <div class="row ml-auto mr-auto">
-                <md-list ng-controller="ListCtrl" ng-cloak="" class="listdemoListControls" ng-app="MyApp">
-                        <md-list-item ng-click="navigateTo(setting.extraScreen, $event)" ng-repeat="setting in settings">
-                                <md-icon md-svg-icon="{{setting.icon}}"></md-icon>
-                                <p> {{ setting.name }} </p>
-                                <md-switch class="md-secondary" ng-model="setting.enabled"></md-switch>
-                              </md-list-item>
-                </md-list>
+        <!-- want to work together -->
+        <div class="container-fluid" id="join-us-container">
+            <div class="container">
+                <div class="row col-md-12">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <h3 class="h3-responsive text-justify-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </div>
+                        <div class="row">
+                            <p class="pr-responsive text-justify-left text-disabled">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nemo animi eum nesciunt odio quos excepturi debitis, repudiandae alias optio fuga similique recusandae, dolorum blanditiis deserunt. Sint ipsam quos repellat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mt-auto mb-auto">
+                        <div class="row float-right"><button class="together-button">Join us</button></div>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- /want to work together /-->
     </main>
     <!-- sidemenu-->
     <div class="sidenav">
