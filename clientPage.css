@@ -44,11 +44,11 @@
     margin-top:50px;
 }
 #header{
-    background: url('../images/office-1.jpg') no-repeat center;
+    background: url('images/office-1.jpg') no-repeat center;
     background-size:cover;
 }
 .main-container-2{
-    background: url('../images/office-1.jpg') no-repeat center;
+    background: url('images/office-1.jpg') no-repeat center;
     padding:100px;
 }
 #mask-content{
