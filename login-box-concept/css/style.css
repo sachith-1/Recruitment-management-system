@@ -67,7 +67,7 @@ body .success {
 body .success p {
   font-size: 14px;
 }
-body p {
+.login p{
   color: #5B5E6F;
   font-size: 10px;
   text-align: left;
