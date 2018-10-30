@@ -229,6 +229,13 @@
     -webkit-transform: scale(1.3);
     transform: scale(1.3); 
 }
-
-
-
+.sidebar-buttons i{
+    cursor: pointer;
+}
+.img-responsive{
+    height:180px;
+    width:auto;
+}
+#top-companies{
+    padding:100px;
+}
