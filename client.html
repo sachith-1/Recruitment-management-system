@@ -12,7 +12,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -23,14 +23,159 @@
                 <div class="row font-weight-light">
                     <p class="float-left">7508882095 | biswassrijeet@gmail.com</p>
                     <div class="float-right ml-auto">
-                        <button class="navbar-buttons" id="login_btn">login</button>
-                        <button class="navbar-buttons" id="logout_btn">register</button>
+                        <button class="navbar-buttons" id="login_btn" data-toggle="modal" data-target="#exampleLoginModal">login</button>
+                        <button class="navbar-buttons" id="logout_btn" data-toggle="modal" data-target="#exampleRegisterModal">register</button>
                         <!-- TODO : language translator button (NEEDS ATTENTION) -->
                         <button class="navbar-buttons">language</button>
                     </div>
                 </div>
             </div>
             <!-- /email line/ -->
+            <!-- modals nav -->
+            <div class="modal fade" id="exampleLoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- CONTRIBUTER :AMIT KUMAR RANJAN -->
+                      <div class='login'>
+                        <div class='login_title mt-5'>
+                          <span>Login to your account</span>
+                        </div>
+                        <div class='login_fields'>
+                          <div class='login_fields__user'>
+                            <div class='icon'>
+                              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+                            </div>
+                            <input placeholder='Username' type='text'>
+                              <div class='validation'>
+                                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+                              </div>
+                            </input>
+                          </div>
+                          <div class='login_fields__password'>
+                            <div class='icon'>
+                              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png'>
+                            </div>
+                            <input placeholder='Password' type='password'>
+                            <div class='validation'>
+                              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+                            </div>
+                          </div>
+                          <div class='login_fields__submit'>
+                            <input type='submit' value='Log In'>
+                            <div class='forgot'>
+                              <a href='#'>Forgotten password?</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='success'>
+                          <h2>Authentication Success</h2>
+                          <p>Welcome back</p>
+                        </div>
+                        
+                      </div>
+                      <div class='authent'>
+                        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/puff.svg'>
+                        <p>Authenticating...</p>
+                      </div>
+                      <!-- /CONTRIBUTION login page/ -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal fade" id="exampleRegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <!-- contribtion by:amit kumar ranjan :logout page-->
+                      <div class='login'>
+                        <div class='login_title'>
+                          <span>Create an new account</span>
+                        </div>
+                        <div class='login_fields'>
+                          <div class='login_fields__user'>
+                            <div class='icon'>
+                              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+                            </div>
+                            <input placeholder='Fullname' type='text'>
+                              <div class='validation'>
+                                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+                              </div>
+                            </input>
+                          </div>
+                          <div class='login_fields__user'>
+                              <div class='icon'>
+                                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+                              </div>
+                              <input placeholder='Username' type='text'>
+                                <div class='validation'>
+                                  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+                                </div>
+                              </input>
+                            </div>
+                            <div class='login_fields__user'>
+                              <div class='icon'>
+                                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
+                              </div>
+                              <input placeholder='Email id' type='text'>
+                                <div class='validation'>
+                                  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+                                </div>
+                              </input>
+                            </div>
+                          <div class='login_fields__password'>
+                            <div class='icon'>
+                              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png'>
+                            </div>
+                            <input placeholder='New Password' type='password'>
+                            <div class='validation'>
+                              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+                            </div>
+                          </div>
+                          <div class='login_fields__password'>
+                              <div class='icon'>
+                                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png'>
+                              </div>
+                              <input placeholder='Confirm Password' type='password'>
+                              <div class='validation'>
+                                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
+                              </div>
+                            </div>
+                          <div class='login_fields__submit'>
+                            <input type='submit' value='Log In'>
+                            <div class='forgot'>
+                              <a href='#'>Forgotten password?</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class='success'>
+                          <h2>You have sucessfully created new account</h2>
+                          <p></p>
+                        </div>
+                        
+                      </div>
+                      <div class='authent'>
+                        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/puff.svg'>
+                        <p>Verifing your crediantial...</p>
+                      </div>
+                      
+                      <!-- /logout page /-->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <!-- /modals end/ -->
             <!-- main navbar -->
             <div class="container">
                 <div class="row font-weight-light">
@@ -144,11 +289,11 @@
                     <div class="col-md-3">
                         <div class="row"><i class="fas custom-fa fa-fighter-jet fa-2x"></i></div>
                         <div class="row font-weight-bold">
-                            <p class="p-responsive mr-auto text-justify-right">
+                            <p class="p-responsive mr-auto text-justify-right" data-aos="flip-up">
                                 Feature 1
                             </p>
                         </div>
-                        <div class="row">
+                        <div class="row" data-aos="flip-up">
                             <p class="p-responsive text-justify-left ml-2">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero reprehenderit
                                 possimus nostrum totam
@@ -159,12 +304,12 @@
                     <div class="col-md-3">
                         <div class="row"><i class="fas custom-fa fa-fighter-jet fa-2x"></i></div>
                         <div class="row font-weight-bold">
-                            <p class="p-responsive mr-auto text-justify-right">
+                            <p class="p-responsive mr-auto text-justify-right" data-aos="flip-up">
                                 Feature 1
                             </p>
                         </div>
                         <div class="row">
-                            <p class="p-responsive text-justify-left ml-2">
+                            <p class="p-responsive text-justify-left ml-2" data-aos="flip-up">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero reprehenderit
                                 possimus nostrum totam
                             </p>
@@ -173,12 +318,12 @@
                     <div class="col-md-3">
                         <div class="row"><i class="fas custom-fa fa-fighter-jet fa-2x"></i></div>
                         <div class="row font-weight-bold">
-                            <p class="p-responsive mr-auto text-justify-right">
+                            <p class="p-responsive mr-auto text-justify-right" data-aos="flip-up">
                                 Feature 1
                             </p>
                         </div>
                         <div class="row">
-                            <p class="p-responsive text-justify-left ml-2">
+                            <p class="p-responsive text-justify-left ml-2" data-aos="flip-up">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero reprehenderit
                                 possimus nostrum totam
                             </p>
@@ -188,12 +333,12 @@
                     <div class="col-md-3">
                         <div class="row"><i class="fas custom-fa fa-fighter-jet fa-2x"></i></div>
                         <div class="row font-weight-bold">
-                            <p class="p-responsive mr-auto text-justify-right">
+                            <p class="p-responsive mr-auto text-justify-right" data-aos="flip-up">
                                 Feature 1
                             </p>
                         </div>
                         <div class="row">
-                            <p class="p-responsive text-justify-left ml-2">
+                            <p class="p-responsive text-justify-left ml-2" data-aos="flip-up">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum vero reprehenderit
                                 possimus nostrum totam
                             </p>
@@ -244,9 +389,9 @@
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="row p-0">
-                                        <div class="col-md-2  mb-auto"><i class="fas custom-fa-1 fa-fighter-jet fa-2x "></i></div>
+                                        <div class="col-md-2  mb-auto" data-aos="fade-right"><i class="fas custom-fa-1 fa-fighter-jet fa-2x "></i></div>
 
-                                        <div class="col-md-7">
+                                        <div class="col-md-7" data-aos="fade-left">
                                             <div class="row">
                                                 <p class="p-responsive font-weight-bold"> feature heading 1</p>
                                             </div>
@@ -263,9 +408,9 @@
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="row p-0">
-                                        <div class="col-md-2  mb-auto"><i class="fas custom-fa-1 fa-fighter-jet fa-2x "></i></div>
+                                        <div class="col-md-2  mb-auto" data-aos="fade-right"><i class="fas custom-fa-1 fa-fighter-jet fa-2x "></i></div>
 
-                                        <div class="col-md-7">
+                                        <div class="col-md-7" data-aos="fade-left">
                                             <div class="row">
                                                 <p class="p-responsive font-weight-bold"> feature heading 1</p>
                                             </div>
@@ -281,9 +426,9 @@
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="row p-0">
-                                        <div class="col-md-2  mb-auto"><i class="fas custom-fa-1 fa-fighter-jet fa-2x "></i></div>
+                                        <div class="col-md-2  mb-auto" data-aos="fade-right"><i class="fas custom-fa-1 fa-fighter-jet fa-2x "></i></div>
 
-                                        <div class="col-md-7">
+                                        <div class="col-md-7" data-aos="fade-left">
                                             <div class="row">
                                                 <p class="p-responsive font-weight-bold"> feature heading 1</p>
                                             </div>
@@ -397,19 +542,16 @@
                 <div class="row col-md-12">
                     <div class="col-md-7">
                         <div class="row">
-                            <h3 class="h3-responsive text-justify-center">Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit.</h3>
+                            <h3 class="h3-responsive text-justify-center" data-aos="fade-left">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
                         </div>
-                        <div class="row">
-                            <p class="pr-responsive text-justify-left text-disabled">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nemo animi eum nesciunt
-                                odio quos excepturi debitis, repudiandae alias optio fuga similique recusandae, dolorum
-                                blanditiis deserunt. Sint ipsam quos repellat.
+                        <div class="row" data-aos="flip-up">
+                            <p class="pr-responsive text-justify-left text-disabled" >
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nemo animi eum nesciunt odio quos excepturi debitis, repudiandae alias optio fuga similique recusandae, dolorum blanditiis deserunt. Sint ipsam quos repellat.
                             </p>
                         </div>
                     </div>
                     <div class="col-md-5 mt-auto mb-auto">
-                        <div class="row float-right"><button class="together-button">Join us</button></div>
+                        <div class="row float-right"><button class="together-button" data-aos="fade-left">Join us</button></div>
                     </div>
                 </div>
             </div>
@@ -706,24 +848,16 @@
 
     <!-- js cdns-->
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuUQMRWZw7S8DPNcoyhKNymdpKmUlBQ3c&callback=initMap"
-        async defer></script>
-    <!--cdn for ng-list -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-animate.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-route.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-aria.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular-messages.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
-    <script src="https://cdn.gitcdn.link/cdn/angular/bower-material/v1.1.10/angular-material.js"></script>
-    <!-- /cdn for ng-list-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuUQMRWZw7S8DPNcoyhKNymdpKmUlBQ3c&callback=initMap"async defer></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script href="clientPage.js"></script>
 
 </body>

@@ -1,5 +1,3 @@
-/* login and logout js */
-
 $('input[type="submit"]').click(function(){
   $('.login').addClass('test')
   setTimeout(function(){
@@ -44,4 +42,3 @@ $('.tab').click(function(){
     $(this).parent().animate({'left':'0'})
   });
 });
-/* /////  login and logout js //// */
