@@ -12,11 +12,12 @@
     color:white;
 }
 .logo{
-    background: url('../images/apple.svg') no-repeat center center;
-    width:auto;
-    min-width:36px;
-    min-height:36px;
-    background-color:white;
+    background: url(images/logo1.png) no-repeat center ;
+    background-size: cover;
+    min-width: 36px;
+    width: 173px;
+    min-height: 55px;
+    height: auto;
 }
 .btn-secondarysecondary{
     background-color: transparent;
