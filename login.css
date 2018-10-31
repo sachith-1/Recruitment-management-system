@@ -99,7 +99,9 @@ body .login .validation {
   z-index: 1;
   right: 75px;
   top: 6px;
-  opacity: 1;
+  opacity: 0;
+  height: 3px;
+  width: 14px;
 }
 body .login .disclaimer {
   position: absolute;
