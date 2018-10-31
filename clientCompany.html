@@ -10,9 +10,13 @@
     <!--script src="main.js"></script-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="clientCompanyPage.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="login.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
 </head>
 
 <body>
@@ -32,155 +36,48 @@
             </div>
             <!-- /email line/ -->
             <!-- modals nav -->
-            <div class="modal fade" id="exampleLoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="exampleLoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- CONTRIBUTER :AMIT KUMAR RANJAN -->
+                            <iframe src="login-box-concept/login_page.html" style="outline:0;border:0;" height="600px" width="500px"></iframe>
+                            <!-- /CONTRIBUTION login page/ -->
+                        </div>
                     </div>
-                    <div class="modal-body">
-                      <!-- CONTRIBUTER :AMIT KUMAR RANJAN -->
-                      <div class='login'>
-                        <div class='login_title mt-5'>
-                          <span>Login to your account</span>
-                        </div>
-                        <div class='login_fields'>
-                          <div class='login_fields__user'>
-                            <div class='icon'>
-                              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
-                            </div>
-                            <input placeholder='Username' type='text'>
-                              <div class='validation'>
-                                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
-                              </div>
-                            </input>
-                          </div>
-                          <div class='login_fields__password'>
-                            <div class='icon'>
-                              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png'>
-                            </div>
-                            <input placeholder='Password' type='password'>
-                            <div class='validation'>
-                              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
-                            </div>
-                          </div>
-                          <div class='login_fields__submit'>
-                            <input type='submit' value='Log In'>
-                            <div class='forgot'>
-                              <a href='#'>Forgotten password?</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class='success'>
-                          <h2>Authentication Success</h2>
-                          <p>Welcome back</p>
-                        </div>
-                        
-                      </div>
-                      <div class='authent'>
-                        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/puff.svg'>
-                        <p>Authenticating...</p>
-                      </div>
-                      <!-- /CONTRIBUTION login page/ -->
-                    </div>
-                  </div>
                 </div>
-              </div>
+            </div>
 
-              <div class="modal fade" id="exampleRegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal fade" id="exampleRegisterModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-body">
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- contribtion by:amit kumar ranjan :logout page-->
+                            <iframe src="login-box-concept/signUp_page.html" style="outline:0;border:0;" height="600px" width="600px"></iframe>
+                            <!-- /logout page /-->
+                        </div>
                     </div>
-                    <div class="modal-body">
-                      <!-- contribtion by:amit kumar ranjan :logout page-->
-                      <div class='login'>
-                        <div class='login_title'>
-                          <span>Create an new account</span>
-                        </div>
-                        <div class='login_fields'>
-                          <div class='login_fields__user'>
-                            <div class='icon'>
-                              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
-                            </div>
-                            <input placeholder='Fullname' type='text'>
-                              <div class='validation'>
-                                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
-                              </div>
-                            </input>
-                          </div>
-                          <div class='login_fields__user'>
-                              <div class='icon'>
-                                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
-                              </div>
-                              <input placeholder='Username' type='text'>
-                                <div class='validation'>
-                                  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
-                                </div>
-                              </input>
-                            </div>
-                            <div class='login_fields__user'>
-                              <div class='icon'>
-                                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/user_icon_copy.png'>
-                              </div>
-                              <input placeholder='Email id' type='text'>
-                                <div class='validation'>
-                                  <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
-                                </div>
-                              </input>
-                            </div>
-                          <div class='login_fields__password'>
-                            <div class='icon'>
-                              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png'>
-                            </div>
-                            <input placeholder='New Password' type='password'>
-                            <div class='validation'>
-                              <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
-                            </div>
-                          </div>
-                          <div class='login_fields__password'>
-                              <div class='icon'>
-                                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/lock_icon_copy.png'>
-                              </div>
-                              <input placeholder='Confirm Password' type='password'>
-                              <div class='validation'>
-                                <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/tick.png'>
-                              </div>
-                            </div>
-                          <div class='login_fields__submit'>
-                            <input type='submit' value='Log In'>
-                            <div class='forgot'>
-                              <a href='#'>Forgotten password?</a>
-                            </div>
-                          </div>
-                        </div>
-                        <div class='success'>
-                          <h2>You have sucessfully created new account</h2>
-                          <p></p>
-                        </div>
-                        
-                      </div>
-                      <div class='authent'>
-                        <img src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/puff.svg'>
-                        <p>Verifing your crediantial...</p>
-                      </div>
-                      
-                      <!-- /logout page /-->
-                    </div>
-                  </div>
                 </div>
-              </div>
+            </div>
             <!-- /modals end/ -->
             <!-- main navbar -->
             <div class="container">
                 <div class="row font-weight-light">
-                    <div class="logo float-left"></div>
-                    <div class="float -right ml-auto d-inline-flex">
+                    <div class="row logo float-left">
+                    </div>
+                    <div class="float-right ml-auto d-inline-flex">
                         <div class="dropdown">
                             <button type="button" class="btn btn-secondarysecondary btn-sm dropdown-toggle" data-toggle="dropdown">
                                 Search Jobs
@@ -546,7 +443,7 @@
                         </div>
                     </div>
                     <div class="col-md-5 mt-auto mb-auto">
-                        <div class="row float-right"><button class="together-button" data-aos="fade-left">Join us</button></div>
+                        <div class="row float-right" data-toggle="modal" data-target="#exampleRegisterModal"><button class="together-button" data-aos="fade-left">Join us</button></div>
                     </div>
                 </div>
             </div>
@@ -719,7 +616,7 @@
                 <div class="row col-md-12 m-0 p-0">
                     <div class="col-md-6">
                         <div class="row">
-                            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76236.70280244217!2d-122.230571525341!3d37.43412311040696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a678bea9d%3A0x29cdf01a44fc687f!2sStanford+University!5e0!3m2!1sen!2snl!4v1540921007911"
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d76236.70280244217!2d-122.230571525341!3d37.43412311040696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fbb2a678bea9d%3A0x29cdf01a44fc687f!2sStanford+University!5e0!3m2!1sen!2snl!4v1540921007911"
                                 width="800px" height="650px" frameborder="0" style="border:0" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -772,7 +669,7 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-12 col-xs-12">
                         <div class="widget">
-                            <h3 class="block-title"><img src="images/logo.png" class="img-responsive" alt="Footer Logo"></h3>
+                            <h3 class="block-title"><img src="images/a.png" style="height:50px" class="img-responsive" alt="Footer Logo"></h3>
                             <div class="textwidget">
                                 <p>450 serra Mall, Building A2<br>
                                         Stanford, CA 94305<br>
@@ -843,17 +740,25 @@
 
     <!-- js cdns-->
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuUQMRWZw7S8DPNcoyhKNymdpKmUlBQ3c&callback=initMap"async defer></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        <script href="login-box-concept/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuUQMRWZw7S8DPNcoyhKNymdpKmUlBQ3c&callback=initMap"
+        async defer></script>
+        <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+        <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();
     </script>
 
-    <script href="clientPage.js"></script>
+    
 
 </body>
 

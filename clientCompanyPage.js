@@ -1,5 +1,4 @@
 /* login and logout js */
-
 $('input[type="submit"]').click(function(){
   $('.login').addClass('test')
   setTimeout(function(){
@@ -32,9 +31,10 @@ $('input[type="text"],input[type="password"]').blur(function(){
 
 $('input[type="text"],input[type="password"]').keyup(function(){
   if(!$(this).val() == ''){
-    $(this).next().animate({'opacity':'1','right' : '30'},200)
-  } else {
     $(this).next().animate({'opacity':'0','right' : '20'},200)
+
+  } else {
+    $(this).next().animate({'opacity':'1','right' : '20'},200)
   }
 });
 
