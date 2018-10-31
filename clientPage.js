@@ -32,9 +32,9 @@ $('input[type="text"],input[type="password"]').blur(function(){
 
 $('input[type="text"],input[type="password"]').keyup(function(){
   if(!$(this).val() == ''){
-    $(this).next().animate({'opacity':'1','right' : '30'},200)
+    $('#tick').css({'opacity':'0'})
   } else {
-    $(this).next().animate({'opacity':'0','right' : '20'},200)
+    $('#tick').css({ 'opacity': '1' })  
   }
 });
 
