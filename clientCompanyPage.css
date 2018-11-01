@@ -16,6 +16,9 @@ body
 ::-webkit-scrollbar{
   width:2px;
 }
+#client_img{
+  height:200px;
+}
 .navbar-buttons{
     background-color: transparent;
     background-repeat: no-repeat;
