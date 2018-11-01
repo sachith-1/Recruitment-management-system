@@ -58,11 +58,12 @@ body
     margin-top:50px;
 }
 #header{
-    background: url('images/office-1.jpg') no-repeat center;
+    background: url('images/bg2.jpg') no-repeat center;
     background-size:cover;
 }
 .main-container-2{
-    background: url('images/office-1.jpg') no-repeat center;
+    background: url('images/bg4.jpg');
+    background-size: cover;
     padding:100px;
 }
 #mask-content{
@@ -74,7 +75,7 @@ body
 }
 #main-container-2-content{
     padding:90px;
-    background-color: #F7F9FB;
+background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 #jobs-posted-hr{
     background-color: #0f60db;
@@ -254,7 +255,8 @@ body
     padding:100px;
 }
 #join-us-container{
-  background-color: #e8e0e03b;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+ background-blend-mode: screen;
   padding: 50px;
   z-index: 5;
 }
@@ -421,7 +423,6 @@ div.modal-content{
   background-color: transparent;
 }
 
-/* abhilakshya */
 /* ==========================================================================
    Blog 
    ========================================================================== */
@@ -467,6 +468,8 @@ div.modal-content{
   line-height: 25px;
   margin-bottom: 20px;
 }
+
+/* abhilakshya */
 
 
 
