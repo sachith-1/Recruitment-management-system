@@ -307,6 +307,44 @@ background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   background-color:#F7F9FB;
 }
 
+.progress {
+  height: 35px;
+  /* background-color:#e4dede */
+}
+.progress.skill-bar{
+  background-color: #e4dede;
+}
+.progress .skill {
+  font: normal 12px "Open Sans Web";
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+  text-transform: uppercase;
+}
+.progress .skill .val {
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+.progress-bar {
+  text-align: left;
+  transition-duration: 3s;
+}
+#figures-header{
+  text-align:center;
+}
+#figures-text{
+  padding:20px 20px;
+}
+#dropdown-btns:hover{
+  background-color:white;
+  border-radius:5px;
+}
+/* #dropdown-btns.button:active{
+  background-color:white;
+} */
+
 /* ==========================================================================
    Featured Jobs Section Style
    ========================================================================== */
