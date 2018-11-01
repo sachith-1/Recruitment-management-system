@@ -1,3 +1,26 @@
+// console.log('hello');
+// window.onscroll = function() {myFunction()};
+
+// var navbar = $('#header-line-2');
+// var sticky = navbar.offsetTop;
+
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
+//   }
+// }
+
+$(function(){
+  $('#header-line-2').affix({
+    offset: {
+      /* Affix the navbar after scroll below header */
+      top: $("#header-line-1").outerHeight(true)}
+  });
+});
+
+
 $('input[type="submit"]').click(function(){
   $('.login').addClass('test')
   setTimeout(function(){
@@ -43,4 +66,5 @@ $('.tab').click(function(){
     $(this).parent().animate({'left':'0'})
   });
 });
+
 
