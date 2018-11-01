@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Client Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="clientPage.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="progress.css" />
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="clientPage.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="progress.css" /> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="clientCompanyPage.css" />
@@ -16,6 +16,13 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"></script>
 
 </head>
 
@@ -284,46 +291,71 @@
 
                     </div>
                     <div class="col-md-6" id="main-container-2-content">
-                        <div class="row" style="margin-bottom:30px;">
-                            <h3 class="h3-responsive text-justify-center">Job in Different Sectors</h3>
+                        <div class="conainer-fluid" style="margin-bottom:10px;">
+                            <div class="row m-0">
+                                    <h3 class="h3-responsive col-md-12 text-justify-center" id="figures-header">Our Figures</h3>
+                            </div>
                         </div>
-                        <div class="container p-0">
-                            <div class="row" data-aos="fade-left">
-                                <p style="width:50%" data-value="50">IT</p>
-                                <progress max="100" value="50" class="it">
-                                    <div class="progress-bar">
-                                        <span style="width: 50%">50%</span>
+                        <div class="row">
+                            <p class="p-responsive text-disabled font-weight-bold" id="figures-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolores, consectetur quidem praesentium ad corporis iure nobis dicta quas molestias expedita pariatur quibusdam sed cupiditate quod magni itaque hic nemo.</p>
+                        </div>
+                        <div class="container-fluid">
+                            
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p class="p-resposive text-justify-left font-weight-bold">I.T.</p>
                                     </div>
-                                </progress>
-                            </div>
-
-                            <div class="row pt-4" data-aos="fade-left">
-                                <p style="width:30%" data-value="30">MANAGEMENT</p>
-                                <progress max="100" value="30" class="management">
-                                    <div class="progress-bar">
-                                        <span style="width: 30%">30%</span>
+                                    <div class="col-md-6 ml-auto">
+                                            <p class="p-resposive  float-right font-weight-bold">50%</p>
                                     </div>
-                                </progress>
-                            </div>
+                                </div>
+                                <div class="progress skill-bar">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                            <span class="skill">I.T.<i class="val">50%</i></span>
+                                        </div>
+                                </div>
 
-
-                            <div class="row pt-4" data-aos="fade-left">
-                                <p style="width:80%" data-value="10">BANKING</p>
-                                <progress max="100" value="10" class="management">
-                                    <div class="progress-bar">
-                                        <span style="width: 10%">10%</span>
+                                <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="p-resposive text-justify-left font-weight-bold">Management</p>
+                                        </div>
+                                        <div class="col-md-6 ml-auto">
+                                                <p class="p-resposive  float-right font-weight-bold">50%</p>
+                                        </div>
                                     </div>
-                                </progress>
-                            </div>
+                                <div class="progress skill-bar">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                                            <span class="skill">Management<i class="val">50%</i></span>
+                                        </div>
+                                </div>
 
-                            <div class="row pt-4" data-aos="fade-left">
-                                <p style="width:80%" data-value="10">OTHER</p>
-                                <progress max="100" value="10" class="management">
-                                    <div class="progress-bar">
-                                        <span style="width: 10%">10%</span>
+                                <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="p-resposive text-justify-left font-weight-bold">Banking</p>
+                                        </div>
+                                        <div class="col-md-6 ml-auto">
+                                                <p class="p-resposive  float-right font-weight-bold">60%</p>
+                                        </div>
                                     </div>
-                                </progress>
-                            </div>
+                                <div class="progress skill-bar">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                            <span class="skill">Banking<i class="val">60%</i></span>
+                                        </div>
+                                </div>
+
+                                <div class="row">
+                                        <div class="col-md-6">
+                                            <p class="p-resposive text-justify-left font-weight-bold">Others</p>
+                                        </div>
+                                        <div class="col-md-6 ml-auto">
+                                                <p class="p-resposive  float-right font-weight-bold">80%</p>
+                                        </div>
+                                    </div>
+                                <div class="progress skill-bar">
+                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                            <span class="skill">Others<i class="val">80%</i></span>
+                                        </div>
+                                </div>  
 
                         </div>
 
@@ -850,6 +882,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script href="login-box-concept/js/index.js"></script>
+    <script src="client.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
